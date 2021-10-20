@@ -6,7 +6,8 @@ import SearchBar from "../SearchBar/SearchBar";
 
 let mapStateToProps = (state) => {
     return {
-        booksData: state.booksList.booksData
+        booksData: state.booksList.booksData,
+        totalCount: state.booksList.totalCount,
     }
 }
 
@@ -21,7 +22,8 @@ class BooksListContainer extends React.Component {
     render() {
         return <>
             <SearchBar onSetBooks = {this.onSetBooks}/>
-            <BooksList booksData = {this.props.booksData}/>
+            <BooksList booksData = {this.props.booksData}
+                       totalCount = {this.props.totalCount}/>
         </>
     }
 }

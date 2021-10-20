@@ -1,17 +1,26 @@
-import s from "../../App.module.css";
+import s from "./BooksList.module.css";
 import React from "react";
+import Book from "./Book/Book";
 
-const BooksList = ({booksData}) => {
+const BooksList = ({booksData, totalCount}) => {
 
-    let booksItems = booksData.map((b) => <div>{b.volumeInfo.title}</div>)
+
+    let booksItems = booksData.map((b) => <Book title = {b.volumeInfo.title}
+                                                img = {b.volumeInfo.imageLinks.smallThumbnail}
+                                                author={b.volumeInfo.authors}
+                                                categories={b.volumeInfo.categories}
+                                                key = {b.id}
+    />)
 
     return (
         <div className={s.wrapper}>
-            <h3>Found {booksData.totalItems || 0} results</h3>
-            {booksItems}
+            <h3>Found {totalCount} results</h3>
+            <div className={s.booksListBar}>{booksItems}</div>
         </div>
 
     )
 }
+
+
 
 export default BooksList

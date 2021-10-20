@@ -1,0 +1,8 @@
+.wrapper {
+    width:100%;
+}
+
+.booksListBar {
+    display: flex;
+    flex-wrap: wrap;
+}

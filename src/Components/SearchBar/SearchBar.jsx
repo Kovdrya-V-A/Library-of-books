@@ -1,6 +1,5 @@
 import s from "./searchBar.module.css"
 import React, {useState} from "react";
-import {getBooks} from "../../DAL/ApiRequests";
 
 
 const SearchBar = ({onSetBooks}) => {
