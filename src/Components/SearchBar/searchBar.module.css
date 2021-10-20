@@ -1,0 +1,24 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.wrapper h1 {
+    text-align: center;
+}
+
+.searchInput {
+    padding-bottom: 30px;
+}
+
+select {
+    margin-right: 30px;
+}
+
+p {
+    display: inline-block;
+    padding-right: 10px;
+}
