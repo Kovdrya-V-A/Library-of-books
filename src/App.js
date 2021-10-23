@@ -1,10 +1,10 @@
 import s from './App.module.css';
 import React from "react";
-import SearchBar from "./Components/SearchBar/SearchBar";
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
 import {Provider} from "react-redux";
 import {store} from "./Redux/ReduxStore";
 import BooksListContainer from "./Components/BooksList/BooksListContainer";
+import BookViewPageContainer from "./Components/BookViewPage/BookViewPageContainer";
 
 
 function App() {
@@ -12,7 +12,8 @@ function App() {
         <BrowserRouter>
             <Provider store={store}>
                 <div className={s.App}>
-                    <BooksListContainer/>
+                    <Route exact path="/" render={() => <BooksListContainer/>}/>
+                    <Route path="/Book/:bookId?" render={() => <BookViewPageContainer/>}/>
                 </div>
             </Provider>
         </BrowserRouter>

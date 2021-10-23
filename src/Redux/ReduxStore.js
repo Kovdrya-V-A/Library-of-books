@@ -1,6 +1,7 @@
 import {applyMiddleware, combineReducers, compose, createStore} from "redux";
-import bookslistReducer from "./Reducers/booksListReduser";
 import thunkMiddleware from "redux-thunk"
+import booksListReducer from "./Reducers/booksListReduser";
+import bookReducer from "./Reducers/bookReducer";
 
 const enchansers = [
     applyMiddleware(thunkMiddleware),
@@ -8,7 +9,8 @@ const enchansers = [
 ]
 
 const reducers = combineReducers({
-    booksList: bookslistReducer
+    booksList: booksListReducer,
+    book: bookReducer,
 })
 
 export const store = createStore(reducers, compose(...enchansers))

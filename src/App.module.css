@@ -1,5 +1,14 @@
 *{
   margin: 0;
+  font-family: "Medium";
+}
+
+@font-face {
+  font-family: Medium;
+  src: url(./Assets/Fonts/gilroy-medium.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+
 }
 
 .App {

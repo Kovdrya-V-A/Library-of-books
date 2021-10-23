@@ -1,8 +1,29 @@
 .wrapper {
     width:100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+
+.resultBar {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.resultBar h3 {
+    padding-bottom: 15px;
+}
+
 
 .booksListBar {
     display: flex;
+    justify-items: center;
     flex-wrap: wrap;
+}
+
+.showMore button:hover{
+    cursor: pointer;
 }

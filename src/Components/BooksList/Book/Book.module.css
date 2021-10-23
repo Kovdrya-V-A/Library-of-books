@@ -1,11 +1,66 @@
 .wrapper {
     flex: 1;
-    background-color: orange;
     min-width: 200px;
-    max-width: 200px;
+    background-color: #F1F1F1;
+    min-height: 300px;
+    margin: 20px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper:hover {
+    background-color:#DCDCDC
+}
+
+.cardBar {
+    position: relative;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
 }
+.imgBar {
+    padding-top: 5px;
+    flex: 1;
+    margin-bottom: 15px;
+
+}
+.imgBar img{
+    height: 110px;
+}
+
+.categoriesBar {
+    flex: 1;
+    text-decoration: underline;
+    color: #696969;
+
+}
+
+.titleBar {
+    flex: 1;
+}
+
+.authorBar {
+    color: #696969;
+    text-decoration: underline;
+    padding-top: 15px;
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        min-width: 90px;
+        min-height: 150px;
+    }
+    .imgBar img{
+        max-width: 110px;
+    }
+}
+
+

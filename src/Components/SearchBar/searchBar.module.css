@@ -3,15 +3,42 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    padding-bottom: 10px;
+    background-color:#F1F1F1;
 }
+
 
 .wrapper h1 {
     text-align: center;
+    padding-bottom: 20px;
 }
 
-.searchInput {
-    padding-bottom: 30px;
+.searchInput form{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.selector {
+    cursor: pointer;
+}
+
+.searchBtn {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    padding: 0;
+}
+
+.searchBtn:hover {
+    background-color: #D3D3D3;
+    border-radius: 10%;
+}
+
+.searchBtn img{
+    height: 25px;
 }
 
 select {
@@ -21,4 +48,18 @@ select {
 p {
     display: inline-block;
     padding-right: 10px;
+}
+
+.selectors {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .selectors {
+        display: flex;
+        flex-direction: column;
+    }
+    .selector {
+        margin-bottom: 5px;
+    }
 }

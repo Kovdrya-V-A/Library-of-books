@@ -1,0 +1,92 @@
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    justify-content: center;
+}
+
+.preloadWrap {
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookInfoBar {
+    display: flex;
+    margin-bottom: 45px;
+
+}
+
+.goBack {
+    text-align: center;
+}
+
+.goBack img {
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.goBack img:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.goBack button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+
+.bookImg{
+    flex: 3;
+}
+
+.bookImg img{
+    width: 150px;
+    margin-right: 10px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+.bookInfo {
+    flex: 17;
+    background-color: #F1F1F1;
+}
+
+.title {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    margin-bottom: 15px;
+}
+
+.categories,
+.authors {
+    margin-bottom: 30px;
+    color: #696969;
+}
+.authors span{
+    text-decoration: underline;
+    margin-right: 5px;
+}
+
+.publisher,
+.publishedDate {
+    margin-bottom: 5px;
+    color: #696969;
+}
+
+.description {
+    padding: 5px;
+    border: 2px solid #F1F1F1;
+    margin: 35px 0;
+
+}
+
+
+
